@@ -3,4 +3,25 @@
   <groupId>devops_gfg</groupId>
   <artifactId>devops_gfg_proj1</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+	<maven.compiler.source>1.8</maven.compiler.source>
+	<maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+  <build>
+		<finalName>my_gfg_calculator</finalName>
+		<plugins>
+			<groupId>org.apache.maven.plugins</groupId>
+			<articraftId>maven-jar-plugin</articraftId>
+			<version>3.1.0</version>
+			<configuration>
+				<archive>
+					<manifest>
+						<addClasspath>true</addClasspath>
+						<classpathPrefix>lib</classpathPrefix>
+						<mainClass>demo.mycalculator</mainClass>
+					</manifest>
+				</archive>
+			</configuration>
+		</plugins>
+	 </build>
 </project>
